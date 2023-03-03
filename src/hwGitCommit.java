@@ -14,6 +14,11 @@ public class hwGitCommit {
     NOVEMBER,
     DECEMBER,
   }
-
+  enum Season {
+    WINTER,
+    SPRING,
+    SUMMER,
+    FALL,
+  }
 
 }
