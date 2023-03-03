@@ -21,7 +21,7 @@ public class hwGitCommit {
     WINTER,
     SPRING,
     SUMMER,
-    FALL,
+    AUTUMN,
   }
   public static Map<Month, Integer> buildMonthsMap() {
     Map<Month, Integer> months = new HashMap<>();
@@ -41,4 +41,16 @@ public class hwGitCommit {
 
     return months;
   }
+  public static Season findSeason(Month month) {
+
+    Season season = switch (month) {
+      case DECEMBER, JANUARY, FEBRUARY -> Season.WINTER;
+      // после return не нужен break
+      case MARCH, APRIL, MAY -> Season.SPRING;
+      case JUNE, JULY, AUGUST -> Season.SUMMER;
+      case SEPTEMBER, OCTOBER, NOVEMBER -> Season.AUTUMN;
+    };
+    return season;
+  }
+
 }
