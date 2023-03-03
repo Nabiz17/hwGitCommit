@@ -44,6 +44,7 @@ public class hwGitCommit {
 
     return months;
   }
+  //создаем метод findSeason
   public static Season findSeason(Month month) {
 
     Season season = switch (month) {
@@ -54,6 +55,7 @@ public class hwGitCommit {
     };
     return season;
   }
+
   public static void main(String[] args) throws IOException {
     BufferedReader inputReader = new BufferedReader(new InputStreamReader(System.in));
 
@@ -82,4 +84,3 @@ public class hwGitCommit {
     }
   }
 }
-
